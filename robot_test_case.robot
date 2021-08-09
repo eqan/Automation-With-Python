@@ -1,22 +1,22 @@
 *** Settings ***
-
-Documentation     Example using the space separated format.
-Library           OperatingSystem
+Documentation     Simple example using SeleniumLibrary.
+Library           SeleniumLibrary
 
 *** Variables ***
-${MESSAGE}        Hello, world!
+${HOMEPAGE}       http://google.com
+${BROWSER}        Firefox
 
 *** Test Cases ***
-My Test
-    [Documentation]    Example test.
-    Log    ${MESSAGE}
-    My Keyword    ${CURDIR}
+Sample Test
+    Launch Browser
+    Check Title
+    [Teardown]    Close Browser
 
-Another Test
-    Should Be Equal    ${MESSAGE}    Hello, world!
 
 *** Keywords ***
-My Keyword
-    [Arguments]    ${path}
-    Directory Should Exist    ${path}
+Launch Browser
+    open browser    ${HOMEPAGE}    ${BROWSER}
+    Maximize Browser Window
 
+Check Title
+    Title Should Be    Google
