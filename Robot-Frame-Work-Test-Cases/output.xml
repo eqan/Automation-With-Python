@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.9.2 on win32)" generated="20210816 19:22:16.649" rpa="true" schemaversion="2">
+<suite id="s1" name="Google Form" source="C:\Users\Eqan Ahmad\Desktop\Automation With Python\Robot-Frame-Work-Test-Cases\Google_Form.robot">
+<test id="s1-t1" name="Launching The Browser &amp; Filling Name">
+<kw name="Page 1" library="Google_Form">
+<status status="PASS" starttime="20210816 19:22:27.905" endtime="20210816 19:22:31.632"/>
+</kw>
+<status status="PASS" starttime="20210816 19:22:27.904" endtime="20210816 19:22:31.633"/>
+</test>
+<test id="s1-t2" name="Filling Batch">
+<kw name="Page 2" library="Google_Form">
+<status status="PASS" starttime="20210816 19:22:31.636" endtime="20210816 19:22:32.537"/>
+</kw>
+<status status="PASS" starttime="20210816 19:22:31.635" endtime="20210816 19:22:32.538"/>
+</test>
+<test id="s1-t3" name="Filling RollNumber">
+<kw name="Page 3" library="Google_Form">
+<status status="PASS" starttime="20210816 19:22:32.543" endtime="20210816 19:22:33.356"/>
+</kw>
+<status status="PASS" starttime="20210816 19:22:32.542" endtime="20210816 19:22:33.357"/>
+</test>
+<test id="s1-t4" name="Filling Subjects">
+<kw name="Page 4" library="Google_Form">
+<status status="PASS" starttime="20210816 19:22:33.360" endtime="20210816 19:22:36.822"/>
+</kw>
+<status status="PASS" starttime="20210816 19:22:33.359" endtime="20210816 19:22:36.823"/>
+</test>
+<test id="s1-t5" name="Filling Previous Subject">
+<kw name="Page 5" library="Google_Form">
+<msg timestamp="20210816 19:22:41.399" level="FAIL">TypeError: 'str' object is not callable</msg>
+<status status="FAIL" starttime="20210816 19:22:36.825" endtime="20210816 19:22:41.399"/>
+</kw>
+<status status="FAIL" starttime="20210816 19:22:36.824" endtime="20210816 19:22:41.401">TypeError: 'str' object is not callable</status>
+</test>
+<doc>Automating Google Form</doc>
+<status status="FAIL" starttime="20210816 19:22:16.658" endtime="20210816 19:22:41.406"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="1" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="1" skip="0" id="s1" name="Google Form">Google Form</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

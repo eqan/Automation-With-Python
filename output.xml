@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.9.2 on win32)" generated="20210810 22:00:46.442" rpa="false" schemaversion="2">
+<suite id="s1" name="Robot Test Case" source="C:\Users\Eqan Ahmad\Desktop\Automation With Python\robot_test_case.robot">
+<test id="s1-t1" name="Sample Test">
+<kw name="Launch Browser">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${HOMEPAGE}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210810 22:00:46.702" level="INFO">Opening browser 'Chrome' to base url 'http://google.com'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="FAIL" starttime="20210810 22:00:49.638" endtime="20210810 22:00:50.962"/>
+</kw>
+<msg timestamp="20210810 22:00:50.962" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
+<msg timestamp="20210810 22:00:51.110" level="FAIL">WebDriverException: Message: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=92.0.4515.131)
+</msg>
+<status status="FAIL" starttime="20210810 22:00:46.701" endtime="20210810 22:00:51.110"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20210810 22:00:51.111" endtime="20210810 22:00:51.111"/>
+</kw>
+<status status="FAIL" starttime="20210810 22:00:46.701" endtime="20210810 22:00:51.111"/>
+</kw>
+<kw name="Check Title">
+<status status="NOT RUN" starttime="20210810 22:00:51.113" endtime="20210810 22:00:51.113"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<errors>
+<msg timestamp="20210810 22:00:46.444" level="ERROR">Error in file 'C:\Users\Eqan Ahmad\Desktop\Automation With Python\robot_test_case.robot' on line 6: Setting variable '@{variablename}[0]' failed: Invalid variable name '@{variablename}[0]'.</msg>
+<msg timestamp="20210810 22:00:46.445" level="ERROR">Error in file 'C:\Users\Eqan Ahmad\Desktop\Automation With Python\robot_test_case.robot' on line 7: Setting variable '@{variablename}[1]' failed: Invalid variable name '@{variablename}[1]'.</msg>
+<msg timestamp="20210810 22:00:50.962" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
+<msg timestamp="20210810 22:00:55.207" level="ERROR">Execution stopped by user.</msg>
+</errors>
+</robot>
